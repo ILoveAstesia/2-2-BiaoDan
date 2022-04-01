@@ -1,0 +1,21 @@
+li{
+    list-style: none;
+    line-height: 35px;
+
+}
+
+dfn{
+    font-style: normal;
+    display: none;
+}
+
+li:hover dfn{
+    display: inline;
+}
+
+
+
+
+body{
+    display: flex;
+}/**/
