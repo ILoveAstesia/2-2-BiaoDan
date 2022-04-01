@@ -1,3 +1,71 @@
 .xiaLa{
     
 }
+.regesiter-::after
+{
+    
+    /* border-style: dashed; */
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 25%;
+    right: 25%;
+    bottom: 0;
+
+    background-image: url(../img/wallhaven-x87w1l.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    background-color: rgba(255, 255, 255, .33);
+
+    
+    z-index: -1;
+    
+    
+    filter: blur(2px);
+    margin: -30px;
+    /* content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    
+    border-radius: 25px; */
+}
+.blur_box:before{
+    border-radius: 25px;
+    border-style: solid;
+    content: "";/* 必须包括 */
+    
+    position: absolute;/* 固定模糊层位置 */
+
+    width:100%;
+    height:100%;
+    left: -100%;/* 回调模糊层位置 */
+    top: -100%;/* 回调模糊层位置 */
+
+    background:url(../img/wallhaven-x87w1l.jpg) no-repeat center center fixed;
+    background-size: cover;
+  
+    /* 与上面的boxbackground设置一样 */
+    filter: blur(5px);/* 值越大越模糊 */
+    z-index: -2;/* 模糊层在最下面 */
+}
+
+.blackBg{
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.2);/* 为文字更好显示，将背景颜色加深 */
+    position: absolute;/* 固定半透明色层位置 */
+    width:100%;
+    height:100%;
+    z-index: -1;/* 中间是rgba半透明色层 */
+  }
+  .blur_box{
+    z-index: 3;/* 为不影响内容显示必须为最高层 */
+    position: relative;
+    
+    /* overflow: hidden; */
+  }

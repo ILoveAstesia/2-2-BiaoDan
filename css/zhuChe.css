@@ -13,9 +13,69 @@ li:hover dfn{
     display: inline;
 }
 
-
-
-
 body{
+   background-image: url(../img/black-linen-2.png);
+    
+    
+    background-attachment: fixed;/*统一位置*/
+    width:100%;
+    height: 100%;
+}
+
+.box
+{
+    overflow: hidden;
+    box-shadow: 0px 0px 10px 1px black;
+    
+    background-image:url(../img/wallhaven-x87w1l.jpg) ;
+    background-position: center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+
+    border-radius: 25px;
+    position: absolute;
+    margin-top: 2%;
+    background-color:rgba(255, 255, 255, .33);
+    border-style: solid; 
+    border-color: antiquewhite;
+    height: 500px;
+    float: left;
+    margin-left: 12.5%;
+    width: 75%;
+    
+    z-index: -1;
+}
+
+.operate{
+    
+    /* border-style: solid; */
+    /* border-color: black;*/
+    
+    font-size:150%;
+    background-color:rgba(255, 255, 255, .66);
+    border-radius: 25px;
+    margin-left: 25%;
+    padding-left: 0%;
+    float:left;
+    width: 50%;
+    margin-top: 12.5%;
+
+    z-index: 2;
+    
+}
+
+.operate::after{
+
+}
+
+.contents{
+    
+    z-index: 1;
+   
+   
+}
+
+
+/*
     display: flex;
-}/**/
+*/
